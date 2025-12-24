@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIREA Pulse — события и новости</title>
+    <meta name="description" content="Сайт с информацией о событиях/мероприятиях/новостях. Статический контент." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<header class="header">
+    <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="На главную">
+            <span class="brand__logo">MP</span>
+            <span class="brand__text">
+        <strong>MIREA Pulse</strong>
+        <span class="muted">события · мероприятия · новости</span>
+      </span>
+        </a>
+
+        <nav class="nav">
+            <a class="nav__link" href="#events">События</a>
+            <a class="nav__link" href="#news">Новости</a>
+            <a class="nav__link" href="#about">О проекте</a>
+        </nav>
+
+        <a class="btn" href="news.html">Читать главную новость</a>
+    </div>
+</header>
+
+<main class="container page">
+    <section class="hero">
+        <div class="hero__text">
+            <h1 class="h1">Городские и студенческие события — в одном месте</h1>
+            <p class="lead">
+                Тут собраны вымышленные (учебные) новости и мероприятия:
+                IT, киберспорт, студорганизации, тех-темы. Контент статический.
+            </p>
+
+            <div class="hero__actions">
+                <a class="btn btn--ghost" href="#events">Смотреть события</a>
+                <a class="btn" href="#news">Смотреть новости</a>
+            </div>
+
+            <div class="chips">
+                <span class="chip">Grid</span>
+                <span class="chip">Flex</span>
+                <span class="chip">Adaptive</span>
+                <span class="chip">Hover</span>
+            </div>
+        </div>
+
+        <div class="hero__media">
+            <img class="hero__img" src="assets/img/cover.jpg" alt="Обложка сайта" />
+        </div>
+    </section>
+
+    <section class="layout">
+        <aside class="sidebar" id="about">
+            <div class="card card--accent">
+                <h2 class="h2">О проекте</h2>
+                <p class="muted">
+                    Учебный сайт (HTML+CSS). Использованы:
+                    <strong>Flexbox</strong>, <strong>Grid</strong>, адаптив под <strong>1920-320</strong>,
+                    анимации через <strong>hover</strong> и <strong>transition</strong>, шапка <strong>sticky</strong>.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 class="h3">Фильтры (статично)</h3>
+                <ul class="list">
+                    <li><span class="tag">IT</span> Митапы</li>
+                    <li><span class="tag">Киберспорт</span> Турниры</li>
+                    <li><span class="tag">Город</span> Мероприятия</li>
+                    <li><span class="tag">Учёба</span> Интенсивы</li>
+                </ul>
+                <p class="muted small">Это просто оформление — без JS (по требованиям контент статический).</p>
+            </div>
+        </aside>
+
+        <div class="content">
+            <section id="events">
+                <div class="section-head">
+                    <h2 class="h2">Ближайшие события</h2>
+                    <a class="link" href="#top" aria-label="Наверх">↑ наверх</a>
+                </div>
+
+                <div class="grid">
+                    <article class="card post">
+                        <img class="post__img" src="assets/img/event1.jpg" alt="Событие 1" />
+                        <div class="post__body">
+                            <div class="post__meta">
+                                <span class="pill">12 окт · 19:00</span>
+                                <span class="pill pill--soft">IT</span>
+                            </div>
+                            <h3 class="post__title">Митап: “Как устроены сети в реальной жизни”</h3>
+                            <p class="muted">
+                                Разбор базовой архитектуры, VLAN, маршрутизации и типовых ошибок.
+                            </p>
+                            <div class="post__foot">
+                                <span class="muted small">Москва · аудитория А-301</span>
+                                <a class="btn btn--sm btn--ghost" href="news.html">Подробнее</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card post">
+                        <img class="post__img" src="assets/img/event2.jpg" alt="Событие 2" />
+                        <div class="post__body">
+                            <div class="post__meta">
+                                <span class="pill">16 окт · 18:30</span>
+                                <span class="pill pill--soft">Киберспорт</span>
+                            </div>
+                            <h3 class="post__title">Турнир по Dota 2</h3>
+                            <p class="muted">
+                                Регистрация командами. Финал на большом экране + призы.
+                            </p>
+                            <div class="post__foot">
+                                <span class="muted small">Медиа-зал</span>
+                                <a class="btn btn--sm btn--ghost" href="news.html">Подробнее</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card post">
+                        <img class="post__img" src="assets/img/event3.jpg" alt="Событие 3" />
+                        <div class="post__body">
+                            <div class="post__meta">
+                                <span class="pill">20 окт · 12:00</span>
+                                <span class="pill pill--soft">Город</span>
+                            </div>
+                            <h3 class="post__title">Выставка тех-проектов студентов</h3>
+                            <p class="muted">
+                                Стенды, мини-демо, общение с командами. Можно прийти просто посмотреть.
+                            </p>
+                            <div class="post__foot">
+                                <span class="muted small">Центр города</span>
+                                <a class="btn btn--sm btn--ghost" href="news.html">Подробнее</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="news" class="mt">
+                <div class="section-head">
+                    <h2 class="h2">Новости</h2>
+                    <span class="muted small">1 отдельная страница новости — обязательна</span>
+                </div>
+
+                <div class="newsline">
+                    <article class="card news">
+                        <h3 class="news__title">Запустили “Лабораторию инфраструктуры” (вымышленная новость)</h3>
+                        <p class="muted">
+                            Студенты могут тестировать стенды, собирать мини-сети и делать мини-проекты.
+                        </p>
+                        <a class="btn btn--sm" href="news.html">Открыть новость</a>
+                    </article>
+
+                    <article class="card news">
+                        <h3 class="news__title">Обновили расписание мероприятий на октябрь</h3>
+                        <p class="muted">
+                            Добавили 3 новых события и одну лекцию по безопасности.
+                        </p>
+                        <a class="btn btn--sm btn--ghost" href="news.html">Открыть</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <small class="muted">© 2025 · Учебный проект</small>
+        <a class="link" href="#top">Наверх ↑</a>
+    </div>
+</footer>
+</body>
+</html>

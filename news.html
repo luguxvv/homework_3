@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Новость — Лаборатория инфраструктуры</title>
+    <meta name="description" content="Страница одной вымышленной новости" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<header class="header">
+    <div class="container header__inner">
+        <a class="brand" href="index.html">
+            <span class="brand__logo">MP</span>
+            <span class="brand__text">
+        <strong>MIREA Pulse</strong>
+        <span class="muted">новость</span>
+      </span>
+        </a>
+
+        <nav class="nav">
+            <a class="nav__link" href="index.html#events">События</a>
+            <a class="nav__link" href="index.html#news">Новости</a>
+            <a class="nav__link" href="index.html#about">О проекте</a>
+        </nav>
+
+        <a class="btn btn--ghost" href="index.html">← На главную</a>
+    </div>
+</header>
+
+<main class="container page">
+    <article class="article card">
+        <div class="article__meta">
+            <span class="pill">Вымышленная новость</span>
+            <span class="pill pill--soft">IT</span>
+            <span class="muted small">Опубликовано: 10 октября</span>
+        </div>
+
+        <h1 class="h1">Запуск “Лаборатории инфраструктуры” для студентов</h1>
+
+        <p class="lead">
+            В учебном корпусе открылась площадка, где студенты смогут собирать мини-стенды:
+            маршрутизацию, VLAN, сервисы мониторинга и резервного копирования.
+        </p>
+
+        <div class="article__grid">
+            <section class="card article__block">
+                <h2 class="h2">Что внутри</h2>
+                <ul class="list">
+                    <li><strong>Сетевой стенд:</strong> маршрутизация, L2/L3, DHCP/DNS</li>
+                    <li><strong>Сервисы:</strong> мониторинг, журналы, бэкапы</li>
+                    <li><strong>Практика:</strong> мини-кейсы “почему сеть упала”</li>
+                </ul>
+            </section>
+
+            <section class="card article__block">
+                <h2 class="h2">Как участвовать</h2>
+                <ol class="list">
+                    <li>Выбрать слот в расписании</li>
+                    <li>Прийти с командой (1–3 человека)</li>
+                    <li>Собрать стенд и оформить мини-отчёт</li>
+                </ol>
+            </section>
+        </div>
+
+        <section class="card article__block mt">
+            <h2 class="h2">Комментарий организаторов</h2>
+            <p class="muted">
+                “Мы хотим, чтобы каждый мог руками потрогать инфраструктуру: не только теорию,
+                но и настройки, ошибки, восстановление после сбоев”.
+            </p>
+            <p class="muted small">
+                Примечание: контент вымышленный и используется только для учебного задания.
+            </p>
+        </section>
+
+        <div class="article__actions mt">
+            <a class="btn" href="index.html#news">← Назад к новостям</a>
+            <a class="btn btn--ghost" href="index.html#events">События</a>
+        </div>
+    </article>
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <small class="muted">© 2025 · Учебный проект</small>
+        <a class="link" href="index.html">На главную</a>
+    </div>
+</footer>
+</body>
+</html>
